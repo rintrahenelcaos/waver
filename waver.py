@@ -19,18 +19,20 @@ ALPHA = 0.01 # amortiguation
 
 WHITE = (255,255,255)
 
-total_cells = [((x*5, y*5), 0, False) for x in range(GRID_WIDTH) for y in range(GRID_HEIGHT)]
-total_cells = [(x*CELL, y*CELL) for x in range(GRID_WIDTH) for y in range(GRID_HEIGHT)]
-total_cells = [[(x*CELL, y*CELL), 0] for x in range(GRID_WIDTH) for y in range(GRID_HEIGHT)]
 total_cells = [[(x*CELL, y*CELL), []] for x in range(GRID_WIDTH) for y in range(GRID_HEIGHT)]
-
-active_cells = []
-
-
 
 
 
 def draw_window(centers, time):
+    """ Draws waves on the display
+
+    Args:
+        centers (tuple): clicked cells positions
+        time (int): reference time
+
+    Returns:
+        pygmae.display: pygame.display object update
+    """
     WIN.fill(BACKGROUND_COLOR)
     wave = "Wave"
     
@@ -70,6 +72,15 @@ def draw_window(centers, time):
  
 
 def grid_position(position):
+    """translates clicks into discrete cell positions
+
+    Args:
+        position (tuple): coordinates
+
+    Returns:
+        tuple: cell position
+    """
+    
     x = (position[0]//CELL)*CELL
     y = (position[1]//CELL)*CELL
     return (x,y)
@@ -86,6 +97,8 @@ def waving_function_indep(time):
    
 
 def main():
+    """ MMain game function
+    """
     
     run = True
     centers = []
