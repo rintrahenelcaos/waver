@@ -7,7 +7,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Waver")
 
 BACKGROUND_COLOR = (127,127,127)
-CELL = 90
+CELL = 9
 FPS = 60
 GRID_WIDTH = WIDTH//CELL
 GRID_HEIGHT = HEIGHT//CELL
