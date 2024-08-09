@@ -19,7 +19,7 @@ The app takes advantage of the nature of waves. Since waves are basically a repe
 
 Upon running wave.py a grey board will appear. To generate a wave click on the dessire spot. Clicking several times will generate waves emmanating from each clicked cell.
 
-! [Running app with two active waves overlapping](waver.png)
+![Running app with two active waves overlapping](waver.png)
 Running app with two active waves overlapping
 
 
