@@ -1,7 +1,7 @@
 import pygame
 import math
 
-# Define the Board/habitat
+# Define the Board
 WIDTH, HEIGHT = 900, 900
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Waver")
